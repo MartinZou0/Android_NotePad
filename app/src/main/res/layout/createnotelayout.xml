@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="记事标题"
+        android:id="@+id/editTitle"
+        android:background="@drawable/shape"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:hint="记事内容"
+        android:layout_marginTop="20dp"
+        android:id="@+id/editBody"
+        android:background="@drawable/shape"/>
+    <LinearLayout
+        android:layout_width="376dp"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:onClick="onCheckTag"
+            android:tag="#d81e06"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="16dp"
+            android:background="#d81e06"/>
+        <ImageView
+            android:onClick="onCheckTag"
+            android:tag="#f4ea2a"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="16dp"
+            android:background="#f4ea2a"/>
+
+        <ImageView
+            android:onClick="onCheckTag"
+            android:tag="#FF4081"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="16dp"
+            android:background="@color/colorAccent"/>
+
+        <ImageView
+            android:onClick="onCheckTag"
+            android:tag="#1296db"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="16dp"
+            android:background="#1296db"/>
+        <ImageView
+            android:onClick="onCheckTag"
+            android:tag="#515151"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="16dp"
+            android:background="#515151"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical">
+
+        <Button
+            android:textColor="#ffffff"
+            android:id="@+id/editCancel"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/buttonshape"
+            android:text="取消" />
+
+    </LinearLayout>
+</LinearLayout>
